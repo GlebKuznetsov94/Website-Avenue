@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avenue travel agency</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <div id="menu-bar" class="fas fa-bars"></div>
+    <img src="images/logo.png">
+    <nav class="navbar">
+        <a href="#home">Главная</a>
+        <a href="#book">Туры</a>
+        <a href="#packages">Лучшее</a>
+        <a href="#services">О нас</a>
+        <a href="#gallery">Галерея</a>
+        <a href="#review">Отзывы</a>
+        <a href="#contact">Контакты</a>
+        <a href="#partners">Партнеры</a>
+    </nav>
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+    </div>
+    <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="Искать...">
+        <label for="search-bar" class="fas fa-search"></label>
+    </form>
+</header>
+<div class="login-form-container">
+    <i class="fas fa-times" id="form-close"></i>
+    <form action="">
+        <h3>Вход в личный кабинет</h3>
+        <input type="email" class="box" placeholder="Введите свой e-mail">
+        <input type="password" class="box" placeholder="Введите свой пароль">
+        <input type="submit" value="Войти" class="btn">
+        <input type="checkbox" id="remember">
+        <label for="remember">Запомнить меня</label>
+        <p>Забыли пароль? <a href="#">Нажмите сюда</a></p>
+        <p>Нет аккаунта? <a href="#">Нажмите сюда</a></p>
+    </form>
+</div>
+<section class="home" id="home">
+    <div class="content">
+        <h3>Приключения начинаются здесь</h3>
+        <p>Путешествуйте и открывайте новые места вместе с нами</p>
+        <a href="#" class="btn">Узнать больше</a>
+    </div>
+    <div class="controls">
+        <span class="vid-btn active" data-src="video/1.mp4"></span>
+        <span class="vid-btn" data-src="video/2.mp4"></span>
+        <span class="vid-btn" data-src="video/3.mp4"></span>
+        <span class="vid-btn" data-src="video/4.mp4"></span>
+        <span class="vid-btn" data-src="video/5.mp4"></span>
+        <span class="vid-btn" data-src="video/6.mp4"></span>
+    </div>
+    <div class="video-container">
+        <video src="video/1.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+</section>
+<section class="book" id="book">
+    <h1 class="heading">
+        <span>П</span>
+        <span>О</span>
+        <span>И</span>
+        <span>С</span>
+        <span>К</span>
+        <span class="space"></span>
+        <span>Т</span>
+        <span>У</span>
+        <span>Р</span>
+        <span>О</span>
+        <span>В</span>
+    </h1>
+    <div class="row">
+        <div class="image">
+            <img src="images/booking.png" alt="">
+        </div>
+        <form action="https://tourvisor.ru">
+            <div class="inputBox">
+                <h3>Город вылета</h3>
+                <input type="text" placeholder="Москва">
+            </div>
+            <div class="inputBox">
+                <h3>Количество туристов</h3>
+                <input type="number" placeholder="2 взрослых">
+            </div>
+            <div class="inputBox">
+                <h3>Прибытие</h3>
+                <input type="date">
+            </div>
+            <div class="inputBox">
+                <h3>Убытие</h3>
+                <input type="date">
+            </div>
+            <input type="submit" class="btn" value="Найти тур">
+        </form>
+    </div>
+</section>
+<section class="packages" id="packages">
+    <h1 class="heading">
+        <span>Л</span>
+        <span>У</span>
+        <span>Ч</span>
+        <span>Ш</span>
+        <span>И</span>
+        <span>Е</span>
+        <span class="space"></span>
+        <span>П</span>
+        <span>Р</span>
+        <span>Е</span>
+        <span>Д</span>
+        <span>Л</span>
+        <span>О</span>
+        <span>Ж</span>
+        <span>Е</span>
+        <span>Н</span>
+        <span>И</span>
+        <span>Я</span>
+    </h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="images/p-1.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> ОАЭ &#127757;</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> 185000₽ <span>200000₽</span> </div>
+                <a href="#" class="btn">Забронировать</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/p-2.jpeg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Доминикана &#127758;</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> 366000₽ <span>400000₽</span> </div>
+                <a href="#" class="btn">Забронировать</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/p-3.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Таиланд &#127759;</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> 467000₽ <span>500000₽</span> </div>
+                <a href="#" class="btn">Забронировать</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/p-4.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Мальдивы &#127759;</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> 610000₽ <span>700000₽</span> </div>
+                <a href="#" class="btn">Забронировать</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/p-5.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Куба &#127758;</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> 398000₽ <span>450000₽</span> </div>
+                <a href="#" class="btn">Забронировать</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/p-6.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Египет &#127757;</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> 129000₽ <span>150000₽</span> </div>
+                <a href="#" class="btn">Забронировать</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="services" id="services">
+    <h1 class="heading">
+        <span>О</span>
+        <span class="space"></span>
+        <span>Н</span>
+        <span>А</span>
+        <span>С</span>
+    </h1>
+    <div class="box-container">
+        <div class="box">
+            <i class="fas fa-address-card"></i>
+            <h3>Лицензированное турагенство</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-handshake"></i>
+            <h3>Качество и надежность</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-globe-asia"></i>
+            <h3>Партнеры по всему миру</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+        </div> 
+        <div class="box">
+            <i class="fas fa-plus-square"></i>
+            <h3>Бесплатная страховка</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-bullhorn"></i>
+            <h3>Поддержка 24/7</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+        </div> 
+        <div class="box">
+            <i class="fas fa-plane"></i>
+            <h3>Лучшие авиаперевозчики</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-hiking"></i>
+            <h3>Эксклюзивные гиды</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+        </div>
+    </div>
+</section>
+<section class="gallery" id="gallery">
+    <h1 class="heading">
+        <span>Г</span>
+        <span>А</span>
+        <span>Л</span>
+        <span>Е</span>
+        <span>Р</span>
+        <span>Е</span>
+        <span>Я</span>
+    </h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="images/g-1.jpg" alt="">
+            <div class="content">
+                <h3>Лучшие места планеты</h3>
+                <a href="#" class="btn">Увидеть больше</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-2.jpg" alt="">
+            <div class="content">
+                <h3>Лучшие места планеты</h3>
+                <a href="#" class="btn">Увидеть больше</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-3.jpg" alt="">
+            <div class="content">
+                <h3>Лучшие места планеты</h3>
+                <a href="#" class="btn">Увидеть больше</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-4.jpg" alt="">
+            <div class="content">
+                <h3>Лучшие места планеты</h3>
+                <a href="#" class="btn">Увидеть больше</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-5.jpg" alt="">
+            <div class="content">
+                <h3>Лучшие места планеты</h3>
+                <a href="#" class="btn">Увидеть больше</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-6.jpg" alt="">
+            <div class="content">
+                <h3>Лучшие места планеты</h3>
+                <a href="#" class="btn">Увидеть больше</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-7.jpeg" alt="">
+            <div class="content">
+                <h3>Лучшие места планеты</h3>
+                <a href="#" class="btn">Увидеть больше</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-8.jpeg" alt="">
+            <div class="content">
+                <h3>Лучшие места планеты</h3>
+                <a href="#" class="btn">Увидеть больше</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="review" id="review">
+    <h1 class="heading">
+        <span>О</span>
+        <span>Т</span>
+        <span>З</span>
+        <span>Ы</span>
+        <span>В</span>
+        <span>Ы</span>
+    </h1>
+    <div class="swiper-container review-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/pic-1.png" alt="">
+                    <h3>Kevin Green</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt fugiat odit minus illum asperiores dolorum enim sint quod ipsam distinctio molestias consectetur ducimus beatae, reprehenderit exercitationem!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/pic-2.png" alt="">
+                    <h3>Dior Keily</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt fugiat odit minus illum asperiores dolorum enim sint quod ipsam distinctio molestias consectetur ducimus beatae, reprehenderit exercitationem!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/pic-3.png" alt="">
+                    <h3>Robert Johnson</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt fugiat odit minus illum asperiores dolorum enim sint quod ipsam distinctio molestias consectetur ducimus beatae, reprehenderit exercitationem!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/pic-4.png" alt="">
+                    <h3>Vanessa Taylor</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt fugiat odit minus illum asperiores dolorum enim sint quod ipsam distinctio molestias consectetur ducimus beatae, reprehenderit exercitationem!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="contact" id="contact">
+    <h1 class="heading">
+        <span>К</span>
+        <span>О</span>
+        <span>Н</span>
+        <span>Т</span>
+        <span>А</span>
+        <span>К</span>
+        <span>Т</span>
+        <span>Ы</span>
+    </h1>
+    <div class="row">
+        <div class="image">
+            <img src="images/contact.png" alt="">
+        </div>
+        <form action="">
+            <div class="inputBox">
+                <input type="text" placeholder="Введите имя">
+                <input type="email" placeholder="Введите e-mail">
+            </div>
+            <div class="inputBox">
+                <input type="number" placeholder="Введите номер">
+                <input type="text" placeholder="Тема обращения">
+            </div>
+            <textarea placeholder="Введите сообщение" name="" id="" cols="30" rows="10"></textarea>
+            <input type="submit" class="btn" value="Отправить">
+        </form>
+    </div>
+</section>
+<section class="partners" id="partners">
+    <h1 class="heading">
+        <span>П</span>
+        <span>А</span>
+        <span>Р</span>
+        <span>Т</span>
+        <span>Н</span>
+        <span>Е</span>
+        <span>Р</span>
+        <span>Ы</span>
+    </h1>
+    <div class="swiper-container brand-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/3.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/4.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/5.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/6.jpg" alt=""></div>
+        </div>
+    </div>
+</section>
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>О нас</h3>
+            <p>ООО "Авеню"<br>Россия, г. Тверь,<br>ул. Новоторжская, д. 18, корп. 1<br>ИНН 00000000 | ОГРН 00000000<br>Все права защищены</p>
+        </div>
+        <div class="box">
+            <h3>Получить помощь</h3>
+            <a href="#">Купить тур</a>
+            <a href="#">Возврат тура</a>
+            <a href="#">Визовый центр</a>
+            <a href="#">Языковой центр</a>
+            <a href="#">Вопросы и ответы</a>
+        </div>
+        <div class="box">
+            <h3>Популярные направления</h3>
+            <a href="https://annawwts.com/country/russia/otdyh-v-rossii/">в России</a>
+            <a href="https://www.atorus.ru/node/49388">в Европе</a>
+            <a href="https://traveltimes.ru/20-лучших-туристических-направлений-в-с/">в Америке</a>
+            <a href="https://www.intui.travel/gde-otdohnut-v-azii-v-2022-godu/">в Азии</a>
+        </div>
+        <div class="box">
+            <h3>Вернуться</h3>
+            <a href="#home">Главная</a>
+            <a href="#book">Туры</a>
+            <a href="#packages">Лучшее</a>
+            <a href="#services">О нас</a>
+            <a href="#gallery">Галерея</a>
+            <a href="#review">Отзывы</a>
+            <a href="#contact">Контакты</a>
+            <a href="#partners">Партнеры</a>
+        </div>
+        <div class="box">
+            <h3>Мы в социальных сетях</h3>
+            <div class="box1">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-vk"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+</div>
+<div class="credit">© Strawberry.inc🍓</div>
+</section>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
